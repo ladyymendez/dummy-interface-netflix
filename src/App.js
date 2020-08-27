@@ -13,7 +13,21 @@ function App() {
       <Row title="Netflix Originals"
         fetchURL={
           requestMovies.fetchNetflixOriginals
-        }/>
+        }
+        isLargeRow
+        />
+      <Row title="Trending Now"
+      fetchURL={
+        requestMovies.fetchTrending
+      }/>
+      <Row title="Action"
+      fetchURL={
+        requestMovies.fetchActionMovies
+      }/>
+      <Row title="Comedy"
+      fetchURL={
+        requestMovies.fetchComedyMovies
+      }/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { url } from '../shared';
+import { url } from '../../shared';
 import './Row.css';
 
 const baseUrl = "https://image.tmdb.org/t/p/original";

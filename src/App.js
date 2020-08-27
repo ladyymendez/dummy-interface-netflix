@@ -1,9 +1,14 @@
 import React from 'react';
+import Row from './components/Row';
+import { requestMovies } from './shared';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hola</h1>
+      <Row title="Netflix Originals"
+        fetchURL={
+          requestMovies.fetchNetflixOriginals
+        }/>
     </div>
   );
 }
